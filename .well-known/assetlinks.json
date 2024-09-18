@@ -1,5 +1,16 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "com.app.vibestar",
-               "sha256_cert_fingerprints": ["46:C7:24:82:A1:99:E0:6F:AF:0D:F1:C1:8C:DF:96:D0:EB:A4:2C:5B:5A:AD:E7:DE:9C:D2:3A:3F:52:8A:CC:A7", "60:F5:B9:70:00:E8:FE:EB:CE:3D:59:7E:35:21:BF:7F:A2:C0:E6:7D:76:2E:F9:A1:21:2F:4C:2B:45:B8:F2:4B"] }
-}]
+[
+  {
+    "relation": [
+    "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.app.vibestar",
+      "sha256_cert_fingerprints": [
+      "46:C7:24:82:A1:99:E0:6F:AF:0D:F1:C1:8C:DF:96:D0:EB:A4:2C:5B:5A:AD:E7:DE:9C:D2:3A:3F:52:8A:CC:A7",
+      "60:F5:B9:70:00:E8:FE:EB:CE:3D:59:7E:35:21:BF:7F:A2:C0:E6:7D:76:2E:F9:A1:21:2F:4C:2B:45:B8:F2:4B",
+      "48:1D:94:5D:62:7E:9B:21:F6:BE:B8:98:43:73:57:EF:B1:9E:3F:3C:D2:EE:EC:66:55:46:EF:1B:74:A5:1B:3C"
+      ]
+    }
+  }
+]
