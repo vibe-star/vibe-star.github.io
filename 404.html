@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="test">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>test</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "2561364591";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+    if (/android/i.test(userAgent)) {
+      // Redirect Android users to Play Store
+      window.location.replace("https://play.google.com/store/apps/details?id=com.app.vibestar");
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      // Redirect iOS users to App Store
+      window.location.replace("https://apps.apple.com/in/app/vibestar/id6670305854");
+    } else {
+      // Redirect all other platforms (desktop, unsupported OS) to main website
+      window.location.replace("https://www.myvibestar.com");
+    }
+  
+    // If none of the redirects happen quickly (e.g., user blocks JS redirects), fallback to Flutter app
+    window.addEventListener('load', function(ev) {
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
